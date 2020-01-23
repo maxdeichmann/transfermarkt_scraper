@@ -60,5 +60,5 @@ def scrape_players_from_clubs(club_link, club_name):
 
 if __name__ == "__main__":
 
-    print(scrape_clubs_from_table().to_string())#.to_csv("players.xlsx", encoding='utf-8', index=False))
+    print(scrape_clubs_from_table().to_string())
     
