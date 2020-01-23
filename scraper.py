@@ -6,9 +6,6 @@ from functools import reduce
 
 def scrape_clubs_from_table(table_link = "http://www.transfermarkt.de/1-bundesliga/tabelle/wettbewerb/L1/saison_id/2019"):
 
-    col_names =  ['Club', 'Name']
-    players_df  = pd.DataFrame(columns = col_names)
-
     table_page = requests.get(table_link, headers={'User-Agent': 'Mozilla/5.0'})
     table_soup = BeautifulSoup(table_page.content, 'html.parser')
     table_container = table_soup.find('div', class_='responsive-table')
