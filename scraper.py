@@ -21,9 +21,7 @@ def scrape_clubs_from_table(table_link = "http://www.transfermarkt.de/1-bundesli
             
             link = a["href"]
             link_parts = link.split("/")
-
             club_name = link_parts[1]
-
             club_link = "http://www.transfermarkt.de/"+link_parts[1]+"/kader/verein/"+link_parts[4]+"/saison_id/2019"
 
             result_objects.append(pool.apply_async(scrape_players_from_clubs, args=(club_link, club_name)))
