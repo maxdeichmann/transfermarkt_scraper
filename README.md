@@ -1,3 +1,2 @@
-# transfermarkt_scraper
-# transfermarkt_scraper
-# transfermarkt_scraper
+# transfermarkt scraper
+This is a webscraper to potentially scrape the bewsite transfermarkt.de
